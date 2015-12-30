@@ -1,0 +1,27 @@
+{
+  "scripts": {
+    "start": "watchify index.js -t babelify -d -o test/index.js"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "eslintConfig": {
+    "ecmaFeatures": {
+      "modules": true
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    }
+  },
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-preset-es2015": "*",
+    "browserify": "*",
+    "babelify": "*",
+    "watchify": "*"
+  }
+}
