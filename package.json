@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "watchify index.js -t babelify -d -o test/index.js"
+    "start": "watchify src/index.js -t babelify -o index.js"
   },
   "babel": {
     "presets": [
