@@ -1,6 +1,11 @@
 {
+  "main": "lib/index.js",
   "scripts": {
-    "start": "watchify src/index.js -t babelify -o index.js"
+    "start": "babel -w src/index.js -o lib/index.js"
+  },
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-preset-es2015": "*"
   },
   "babel": {
     "presets": [
@@ -16,12 +21,5 @@
       "node": true,
       "es6": true
     }
-  },
-  "devDependencies": {
-    "babel-core": "*",
-    "babel-preset-es2015": "*",
-    "browserify": "*",
-    "babelify": "*",
-    "watchify": "*"
   }
 }
